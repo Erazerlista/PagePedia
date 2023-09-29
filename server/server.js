@@ -4,7 +4,20 @@ const path = require('path');
 const db = require('./config/connection');
 const routes = require('./routes');
 
-//express server
+// Define your GraphQL schema (typeDefs) and resolvers
+const typeDefs = gql`
+  type Query {
+    hello: String
+  }
+`;
+
+const resolvers = {
+  Query: {
+    hello: () => 'Hello, World!',
+  },
+};
+
+// Create an Express server
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -21,7 +34,7 @@ apolloServer.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// if we're in production, serve client/build as static assets
+// If you're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
