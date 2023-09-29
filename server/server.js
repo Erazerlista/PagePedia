@@ -21,6 +21,19 @@ apolloServer.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Define your GraphQL schema
+const typeDefs = gql`
+  type Query {
+    hello: String
+  }
+`;
+
+// Define your GraphQL resolvers
+const resolvers = {
+  Query: {
+    hello: () => 'Hello, World!',
+  },
+};
 
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
