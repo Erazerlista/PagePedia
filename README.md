@@ -1,5 +1,15 @@
 # PagePedia: Book Search Engine
 
+# GitHub Repo:
+
+https://github.com/Erazerlista/PagePedia
+
+# Heroku
+
+# Screenshot
+
+# Video
+
 # User Story
 
 AS AN avid reader
@@ -37,3 +47,11 @@ WHEN I click on the Remove button on a book
 THEN that book is deleted from my saved books list
 WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/
+
+# Backend Specifications
+
+auth.js: Update the auth middleware function to work with the GraphQL API.
+
+server.js: Implement the Apollo Server and apply it to the Express server as middleware.
+
+Install latest npm install apollo-server-express@2.15.0
