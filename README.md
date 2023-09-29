@@ -55,3 +55,4 @@ auth.js: Update the auth middleware function to work with the GraphQL API.
 server.js: Implement the Apollo Server and apply it to the Express server as middleware.
 
 Install latest npm install apollo-server-express@2.15.0
+( await server.start() before calling server.applyMiddleware.)
