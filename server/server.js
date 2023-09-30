@@ -19,7 +19,7 @@ const resolvers = {
 
 // Create an Express server
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3006;
 
 // Create an Apollo Server instance
 const apolloServer = new ApolloServer({

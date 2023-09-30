@@ -8,7 +8,11 @@ https://github.com/Erazerlista/PagePedia
 
 # Screenshot
 
+<img src= "assets/website.png" alt="picture of book search website">
+
 # Video
+
+https://drive.google.com/file/d/1xuzqlR4JXD6yDrUGTQsQWd6U-schrumD/view
 
 # User Story
 
