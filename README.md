@@ -16,6 +16,10 @@ https://pagepedia-9652d3c8a4c6.herokuapp.com/
 
 https://drive.google.com/file/d/1xuzqlR4JXD6yDrUGTQsQWd6U-schrumD/view
 
+# About
+
+a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
+
 # User Story
 
 AS AN avid reader
